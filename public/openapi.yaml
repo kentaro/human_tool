@@ -1,0 +1,43 @@
+openapi: 3.0.1
+info:
+  title: HumanTool
+  description: Plugin to query the human as a tool API.
+  version: 'v1'
+servers:
+  - url: http://localhost:4000
+paths:
+  /query:
+    post:
+      operationId: query
+      summary: Send a query to a human
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/queryRequest'
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/queryResponse'
+components:
+  schemas:
+    queryRequest:
+      type: object
+      properties:
+        query:
+          type: string
+          description: A query to a human
+      required:
+      - query
+    queryResponse:
+      type: object
+      properties:
+        answer:
+          type: string
+          description: The answer from the human
+      required:
+        - answer
