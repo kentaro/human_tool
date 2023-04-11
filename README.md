@@ -26,10 +26,12 @@ See the video for further details: https://youtu.be/zt0zXF1cMPg
 ```mermaid
 sequenceDiagram
 
-  participant User (Browser)
-  participant ChatGPT
+  box Frontend
+    participant User (Browser)
+    participant ChatGPT
+  end
 
-  box OTP distribution
+  box Backend
     participant Plugin
     participant Human
   end
