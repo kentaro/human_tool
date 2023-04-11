@@ -17,9 +17,9 @@ iex --sname plugin@localhost -S mix
 iex --sname human@localhost lib/human_tool/human.ex
 ```
 
-See the video for further details:
+See the video for further details: https://youtu.be/zt0zXF1cMPg
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/zt0zXF1cMPg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+[![](./screenshot.png)](https://youtu.be/zt0zXF1cMPg)
 
 ## Architecture
 
